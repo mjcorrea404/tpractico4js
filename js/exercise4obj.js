@@ -1,10 +1,7 @@
-// Definir objeto calculadora
 const calculadora = {
-    // Propiedades
     valorA: 0,
     valorB: 0,
     
-    // Métodos
     sumar: function() {
       return this.valorA + this.valorB;
     },
@@ -22,18 +19,18 @@ const calculadora = {
     }
   };
   
-  // Ejemplos de uso
+  
   calculadora.valorA = 5;
   calculadora.valorB = 3;
-  console.log(calculadora.sumar()); // 8
-  console.log(calculadora.restar()); // 2
-  console.log(calculadora.multiplicar()); // 15
-  console.log(calculadora.dividir()); // 1.6666666666666667
+  console.log(calculadora.sumar()); 
+  console.log(calculadora.restar()); 
+  console.log(calculadora.multiplicar()); 
+  console.log(calculadora.dividir()); 
   
   calculadora.valorA = 10;
   calculadora.valorB = 2;
-  console.log(calculadora.sumar()); // 12
-  console.log(calculadora.restar()); // 8
-  console.log(calculadora.multiplicar()); // 20
-  console.log(calculadora.dividir()); // 5
+  console.log(calculadora.sumar()); 
+  console.log(calculadora.restar()); 
+  console.log(calculadora.multiplicar()); 
+  console.log(calculadora.dividir()); 
   
