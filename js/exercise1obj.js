@@ -1,28 +1,29 @@
-let auto = {
-  color: "negro",
+const auto = {
+  color: "Negro",
   marca: "Toyota",
-  modelo: "yaris",
+  modelo: "Yaris",
   encendido: false,
 
-  
   encender: function () {
-    this.encendido = true;
-    console.log("El auto está encendido.");
+    if ((this.encendido = alert("Quiere encender el auto?"))) {
+      this.encendido = true;
+      console.log("El auto está encendido.");
+    } else {
+      console.log("El auto ya está encendido.");
+    }
   },
 
-  
   apagar: function () {
-    this.encendido = false;
-    console.log("El auto está apagado.");
+    if ((this.encendido = alert("Quiere apagar el auto?"))) {
+      this.encendido = false;
+      console.log("El auto está apagado.");
+    } else {
+      console.log("El auto ya está apagado.");
+    }
   },
 };
 
-
-console.log(auto.color); 
-console.log(auto.encendido); 
-
-auto.encender(); 
-console.log(auto.encendido); 
-
-auto.apagar(); 
-console.log(auto.encendido); 
+auto.encender();
+document.write("Auto encendido");
+auto.apagar();
+document.write("Auto Apagado");
