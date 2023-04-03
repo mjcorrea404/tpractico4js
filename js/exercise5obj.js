@@ -57,3 +57,62 @@ let listaProductos = [
     },
     { nombreProducto: "Agua micellar", precio: 2890, categoria: "Limpieza" },
     ];
+
+    dibujarTabla(listaProductos)
+
+    function dibujarTabla(listaProductos) {
+        // Obtener el elemento HTML donde se dibujará la tabla
+        const contenedorTabla = document.getElementById('tabla');
+      
+        // Crear la tabla
+        const tabla = document.createElement('table');
+      
+        // Crear la fila de encabezado
+        const encabezado = document.createElement('tr');
+      
+        // Crear las celdas del encabezado
+        const producto = document.createElement('th');
+        producto.textContent = 'Producto';
+      
+        const categoria = document.createElement('th');
+        categoria.textContent = 'Categoría';
+      
+        const precio = document.createElement('th');
+        precio.textContent = 'Precio';
+      
+        // Agregar las celdas del encabezado a la fila de encabezado
+        encabezado.appendChild(producto);
+        encabezado.appendChild(categoria);
+        encabezado.appendChild(precio);
+      
+        // Agregar la fila de encabezado a la tabla
+        tabla.appendChild(encabezado);
+      
+        // Recorrer los datos para crear las filas de la tabla
+        datos.forEach(dato => {
+          // Crear la fila
+          const fila = document.createElement('tr');
+      
+          // Crear las celdas de la fila
+          const celdaProducto = document.createElement('td');
+          celdaProducto.textContent = dato.producto;
+      
+          const celdaCategoria = document.createElement('td');
+          celdaCategoria.textContent = dato.categoria;
+      
+          const celdaPrecio = document.createElement('td');
+          celdaPrecio.textContent = dato.precio;
+      
+          // Agregar las celdas a la fila
+          fila.appendChild(celdaProducto);
+          fila.appendChild(celdaCategoria);
+          fila.appendChild(celdaPrecio);
+      
+          // Agregar la fila a la tabla
+          tabla.appendChild(fila);
+        });
+      
+        // Agregar la tabla al contenedor
+        contenedorTabla.appendChild(tabla);
+      }
+      
