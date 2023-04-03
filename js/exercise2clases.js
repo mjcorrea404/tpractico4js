@@ -16,11 +16,15 @@ let cuenta = {
     }
   };
   
-  // Ejemplo de uso:
-  console.log(cuenta.informar()); // Titular: Alex, Saldo: 0
+  
+  console.log(cuenta.informar()); 
+  document.write("Alex, Saldo: 35000")
   cuenta.ingresar(100);
-  console.log(cuenta.informar()); // Titular: Alex, Saldo: 100
+  alert("Saldo Disponible")
+  console.log(cuenta.informar()); 
   cuenta.extraer(50);
-  console.log(cuenta.informar()); // Titular: Alex, Saldo: 50
-  cuenta.extraer(100); // No hay suficiente saldo en la cuenta.
+  console.log(cuenta.informar()); 
+  alert("Extraer")
+  cuenta.extraer(100); // 
+  document.write("No hay suficiente saldo en la cuenta")
   
