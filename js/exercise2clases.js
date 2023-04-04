@@ -1,5 +1,5 @@
 let cuenta = {
-    titular: "Alex",
+    titular: "Juli",
     saldo: 0,
     ingresar: function(cantidad) {
       this.saldo += cantidad;
@@ -18,7 +18,7 @@ let cuenta = {
   
   
   console.log(cuenta.informar()); 
-  document.write("Alex, Saldo: 35000")
+  document.write("Juli, Saldo: 35000")
   cuenta.ingresar(100);
   alert("Saldo Disponible")
   console.log(cuenta.informar()); 
